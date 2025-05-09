@@ -1,0 +1,50 @@
+{
+  "songs": [
+    {
+      "id": 1746715077923,
+      "title": "Stressed Out ",
+      "artist": "Twenty One Pilots",
+      "created_at": "2025-05-08T14:37:57.923Z"
+    },
+    {
+      "id": 1746796492458,
+      "title": "Heathens",
+      "artist": "Twenty One Pilots",
+      "year": 2017,
+      "previewUrl": "https://open.spotify.com/intl-de/track/6i0V12jOa3mr6uu4WYhUBr?si=26cfde982488434e",
+      "created_at": "2025-05-09T13:14:52.458Z"
+    }
+  ],
+  "battles": [
+    {
+      "id": 1746716191277,
+      "song1_id": 1746716187512,
+      "song2_id": 1746715077923,
+      "song1_votes": 0,
+      "song2_votes": 1,
+      "battle_date": "2025-05-08"
+    },
+    {
+      "id": 1746796872625,
+      "song1_id": 1746796492458,
+      "song2_id": 1746715077923,
+      "song1_votes": 1,
+      "song2_votes": 0,
+      "battle_date": "2025-05-09"
+    }
+  ],
+  "votes": [
+    {
+      "id": 1746716193177,
+      "battle_id": 1746716191277,
+      "user_ip": "::1",
+      "vote_date": "2025-05-08"
+    },
+    {
+      "id": 1746796885154,
+      "battle_id": 1746796872625,
+      "user_ip": "::1",
+      "vote_date": "2025-05-09"
+    }
+  ]
+}

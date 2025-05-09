@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Song Battle</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Song Battle</h1>
+            <p class="subtitle">Wähle deinen Favoriten des Tages</p>
+            <a href="/admin.html" class="admin-button">
+                <i class="fas fa-lock"></i>
+                Admin
+            </a>
+        </header>
+        
+        <main>
+            <div class="battle-container">
+                <div class="timer">
+                    <p>Nächstes Battle in: <span id="countdown"></span></p>
+                </div>
+
+                <div class="songs-battle">
+                    <div class="song-card" id="song1">
+                        <div class="song-info">
+                            <h3 class="song-title">Wird geladen...</h3>
+                            <p class="song-artist"></p>
+                            <p class="song-year"></p>
+                        </div>
+                        <div class="song-preview"></div>
+                        <button class="vote-button" onclick="voteSong(1)">
+                            <i class="fas fa-crown"></i>
+                            <span>Wählen</span>
+                        </button>
+                        <div class="vote-percentage"></div>
+                    </div>
+
+                    <div class="versus">VS</div>
+
+                    <div class="song-card" id="song2">
+                        <div class="song-info">
+                            <h3 class="song-title">Wird geladen...</h3>
+                            <p class="song-artist"></p>
+                            <p class="song-year"></p>
+                        </div>
+                        <div class="song-preview"></div>
+                        <button class="vote-button" onclick="voteSong(2)">
+                            <i class="fas fa-crown"></i>
+                            <span>Wählen</span>
+                        </button>
+                        <div class="vote-percentage"></div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="previous-battles">
+                <h2>Letzte Battles</h2>
+                <div id="previousBattlesList">
+                    <!-- Hier werden die vergangenen Battles angezeigt -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
